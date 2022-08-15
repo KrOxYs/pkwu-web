@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.main-card {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+
+}
+.image {
+    width: 230px;
+    border-radius: 10px;
+}
+.card-utama {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px -1px rgba(0,0,0,0.66);
+-webkit-box-shadow: 4px 4px 30px -1px rgba(0,0,0,0.66);
+-moz-box-shadow: 4px 4px 30px -1px rgba(0,0,0,0.66);
+}
+.image-product {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    bottom: 20px;
+}
+.btn {
+    margin-top: 15px;
+}
+        
+.info-product {
+    padding: 10px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    position: relative;
+    background-color:white;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    transition: box-shadow 1s ease-in-out ;
+}
+.info-product:hover{
+    box-shadow: 0px 0px 59px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 59px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 59px 0px rgba(0,0,0,0.75);
+}
+.info-product h2 {
+    font-weight: bold;
+    font-family: Ubuntu, Geneva, Tahoma, sans-serif;
+}
+.product-deks{
+    margin-top: 5px;
+
+}
+@media only screen and  (max-width:800px) {
+    .info-product{
+        width:90%
+    }
+}
