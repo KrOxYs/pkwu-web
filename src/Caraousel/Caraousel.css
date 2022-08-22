@@ -1,0 +1,20 @@
+.cara-main{
+    display: flex;
+    justify-content: center;
+    background-color: #4871f7;
+    /* margin-top: 10px; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.crs-main {
+    border: 1px solid white;
+    box-shadow: 1px 11px 22px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 11px 22px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 11px 22px 1px rgba(0,0,0,0.75);
+}
+
+/* @media only screen and (max-width: 800px) {
+    .crs-main {
+        width: 80%;
+    }
+} */

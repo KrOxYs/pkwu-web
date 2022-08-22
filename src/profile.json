@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "Ibrahim Faris Mahardika",
+        "role" : "Creativity",
+        "insta" : "https://www.instagram.com/raibaqi/" ,
+        "imgURL" : "",
+        "id" : 0
+    },
+    {
+        "name" : "Mohammad Ahnaf Zain",
+        "role" : "Creativity",
+        "insta" : "https://www.instagram.com/zaae.nn/" ,
+        "imgURL" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8zXheFW5u-ymE2R2vayy9HtIs3jgMnfILWgw7bud&s",
+        "id" : 1
+    },
+    {
+        "name" : "Muhammad Rafli Arrozi",
+        "role" : "Creativity",
+        "insta" : "https://www.instagram.com/raibaqi/" ,
+        "imgURL" : "",
+        "id" : 2
+    },
+    {
+        "name" : "Mohammad Raifandi Baiqi",
+        "role" : "Creativity",
+        "insta" : "https://www.instagram.com/raibaqi/" ,
+        "imgURL" : "",
+        "id" : 3 
+    }
+]

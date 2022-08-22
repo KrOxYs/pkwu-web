@@ -1,0 +1,19 @@
+.headers-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* .headers-image {
+    width: ;
+} */
+
+/* @media only screen and (max-width: 524px) {
+    .headers-main {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .headers-text {
+        width: auto;
+    }
+} */
