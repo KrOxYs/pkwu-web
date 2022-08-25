@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react"
 
-const FormsItemsComp = () => {
+const FormsItemsComp = ({showButtonSubmit}) => {
   const [name,setName] = useState('')
   const [email,setMail] = useState('')
   const [kelas,setKelas] = useState('')
+  const [showLoading,setLoading] = useState(false)
+
+  const showButton = showButtonSubmit;
+  const showButtonFalse = !showButton;
+
+  // const showButton = showButtonSubmit;
   let [items,setItems] = useState(0)
   
   const price = 30000 * items
@@ -30,6 +36,12 @@ const FormsItemsComp = () => {
     setItems(...valueItems)
   }
 
+  // event 
+  const handleClick = () => {
+    if(name != '' && kelas != '' && email != ''){
+      setLoading(true)
+    }
+  }
 
   // price
 
@@ -37,6 +49,7 @@ const FormsItemsComp = () => {
     if(items < 0) {
       setItems(0)
     }
+
   })
 
   const increment = () =>{
@@ -81,14 +94,12 @@ const FormsItemsComp = () => {
                           </a>
                         </div>
                       </div>
-                      <input value={priceToRupiah} name="total" />
+                      <input value={priceToRupiah} name="total" type={'hidden'} />
               
                       <div className="md:col-span-5 text-right">
-                        <div className="inline-flex items-end">
-                          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
-                        </div>
+                        <h4 className="font-black absolute text-xl">Harga</h4>
+                        <p className="font-extrabold absolute mt-7 text-lg">{priceToRupiah}</p>
                       </div>
-
                     </div>
                   </div>
     )

@@ -1,8 +1,6 @@
-import Rate from '../Rating';
-import { Card } from 'flowbite-react/lib/esm/components';
+
 import './product.css'
-import {  Link  } from 'react-router-dom'
-import { useState } from 'react';
+
 import CardComp from '../components/Card';
 
 const Product = ({productTitle}) => {
@@ -13,7 +11,7 @@ const Product = ({productTitle}) => {
 
     return (
         <div className="main-card w-auto mx-3">
-            <CardComp rating={true} Showbutton={true} showPrice={false}/>
+            <CardComp rating={true} Showbutton={true} />
             <div className="info-product">
                 <ul>
                     <li><h2 className='text-xl'>{productTitle}</h2></li>

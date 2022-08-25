@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #000000;
 }
 /* .headers-image {
     width: ;
