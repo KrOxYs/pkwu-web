@@ -2,7 +2,7 @@ import { Navbar } from 'flowbite-react/lib/esm/components';
 const Navigation = () => {
     return (
         <Navbar
-    fluid={true}
+    fluid={false}
     rounded={true}
     
   >
@@ -14,11 +14,11 @@ const Navigation = () => {
   
       /> */}
       <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-        Pekawu banh edi 
+        Kelompok 4 PKWU 
       </span>
     </Navbar.Brand>
-    <Navbar.Toggle />
-    <Navbar.Collapse>
+    {/* <Navbar.Toggle /> */}
+    {/* <Navbar.Collapse>
       <Navbar.Link
         href="/home"
       >
@@ -33,7 +33,7 @@ const Navigation = () => {
       <Navbar.Link href="/contact">
         <p>Contact</p>
       </Navbar.Link>
-    </Navbar.Collapse>
+    </Navbar.Collapse> */}
   </Navbar>
     )
 }
