@@ -10,7 +10,7 @@ const CaraoselSlide = () => {
     return (
     //   </div>     
    <div className="cara-main w-auto mx-3">
-      <div className='crs-main w-3/5 h-56 sm:h-80 xl:h-80 2xl:h-96 md:w-2/5 xl:w-1/3'>
+      <div className='crs-main w-3/5 h-56 sm:h-80 xl:h-80 2xl:h-96 md:w-1/2 xl:w-1/3'>
       <Carousel>
         {Image && Image.map(image => {
         return (

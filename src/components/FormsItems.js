@@ -60,6 +60,10 @@ const FormsItemsComp = ({showButtonSubmit}) => {
     // e.preventDefault();
     setItems(items++)
   }
+
+  // useEffect(() => {
+  //   fetch(' http://localhost:3000/buyyer')
+  // })
     return (
         <div className="lg:col-span-2">
                     <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
