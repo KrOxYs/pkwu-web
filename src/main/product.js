@@ -14,8 +14,8 @@ const Product = ({productTitle}) => {
             <CardComp rating={true} Showbutton={true} />
             <div className="info-product">
                 <ul>
-                    <li><h2 className='text-xl'>{productTitle}</h2></li>
-                    <li><div className='product-deks'>Produk Ini Dibuat Dengan SepenHatiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div></li>
+                    <li><h2 className='text-xl'>Deskripsi Produk</h2></li>
+                    <li><div className='product-deks'>Produk Hiasan Lampu Dengan Stik Eskrim</div></li>
                 </ul>
             </div>
         </div>

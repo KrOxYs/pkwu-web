@@ -15,7 +15,7 @@ const CardComp = ({rating,Showbutton,showPrice}) => {
     })
 
     return (
-        <div className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div className="w-auto max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img className="p-8 rounded-t-lg " src="https://mail.google.com/mail/u/0?ui=2&ik=7562209790&attid=0.4&permmsgid=msg-a:r-3565955250793260601&th=182d0bea158b0ae9&view=att&disp=safe&realattid=f_l77uk74p3" alt="product image"/>
     </a>

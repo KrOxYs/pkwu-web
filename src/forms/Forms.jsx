@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import { BrowserRouter, createRoutesFromChildren, Navigate, Route, Router, Routes, useHref, useRoutes } from "react-router-dom"
 import CardComp from "../components/Card"
 import FormsItemsComp from "../components/FormsItems"
 import FinalStep from "../Bukti Pembelian/Bukti"
@@ -13,8 +13,11 @@ const Forms = () => {
   const [route,setRoute] = useState(false)
   const [showAlert,setAlert] = useState(false)
   const [showLoading,setShowLoading] = useState(false)
-  // const {route} = App
+
+  // const routes = useRoutes
   const handleSubmit = (e) =>{
+
+    // const update = {name}
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwv0TjTrKT_zSbf9D0dZ6dRbZbHbWYjE94f1Kh9bR16n0hft-G35y5Y3M_Z9dTYC_2y/exec'
     const form = document.forms['submit-to-google-sheet']
     
@@ -25,39 +28,45 @@ const Forms = () => {
           if(response.status == 200) 
           {
             setRoute(true)
+            setAlert(true)
             setTimeout(() => {
               setNavTo(true)
-            }, 3500);
+            }, 3000);
           }
         })
         .catch(error => console.error('Error!', error.message))
     e.preventDefault()
 
-    setTimeout(() => {
-      setAlert(true)
-    }, 3000);
+    // setTimeout(() => {
+    //   setAlert(true)
+    // }, 3000);
 
   }
+  //  useEffect(() => {
+  //   console.log(href)
+  //  })
 
     return (
        // <!-- component -->
        <div>
         {/* <SuccessAlertComp/> */}
         {showAlert && <SuccessAlertComp message='Pembelian Berhasil' messageInfo='Terimakasih Sudah Membeli'/>}
-        {/* <div className="hidden"><App setRoutes={route}/></div> */}
-        {/* redirect to home */}
-        {/* {route && <App setRoutes={route} />} */}
+
+        {/* <Router>
+          <Route path="buy-product/final-step" element={<FinalStep/>}></Route>
+        </Router> */}
+
         {navTo && <Navigate to={'/'} replace={true} />}
        <form onSubmit={handleSubmit} name="submit-to-google-sheet">
         <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
           <div className="container max-w-screen-lg mx-auto">
             <div>
-              <h2 className="font-semibold text-xl text-gray-600">Responsive Form</h2>
-              <p className="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p>
+              <h2 className="font-semibold text-xl text-gray-600 mb-5">Form Pembelian</h2>
+              {/* <p className="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p> */}
 
               <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                 <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                  <div className="text-black-600 xl:w-auto lg:w-auto md:w-1/2 sm:w-auto ">
+                  <div className="text-black-600 xl:w-auto lg:w-auto md:w-auto sm:w-auto ">
                     <CardComp rating={false} Showbutton={false} showPrice={true} />
                   </div>
 
@@ -81,7 +90,9 @@ const Forms = () => {
           </div>
         </div>
         </form>
-      
+          {/* <div className="hidden">
+          <App showRoutes={false} />
+          </div> */}
         </div>
     
     )
