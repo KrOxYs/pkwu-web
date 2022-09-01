@@ -56,7 +56,7 @@ const Forms = () => {
           <Route path="buy-product/final-step" element={<FinalStep/>}></Route>
         </Router> */}
 
-        {navTo && <Navigate to={'/buy-product/final-step'} replace={true} />}
+        {navTo && <Navigate to={'/'} replace={true} />}
        <form onSubmit={handleSubmit} name="submit-to-google-sheet">
         <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
           <div className="container max-w-screen-lg mx-auto">
