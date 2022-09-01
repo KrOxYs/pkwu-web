@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { BrowserRouter, createRoutesFromChildren, Navigate, Route, Router, Routes, useHref, useRoutes } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 import CardComp from "../components/Card"
 import FormsItemsComp from "../components/FormsItems"
 import FinalStep from "../Bukti Pembelian/Bukti"
@@ -56,7 +56,7 @@ const Forms = () => {
           <Route path="buy-product/final-step" element={<FinalStep/>}></Route>
         </Router> */}
 
-        {navTo && <Navigate to={'/'} replace={true} />}
+        {navTo && <Navigate to={'/buy-product/final-step'} replace={true} />}
        <form onSubmit={handleSubmit} name="submit-to-google-sheet">
         <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
           <div className="container max-w-screen-lg mx-auto">

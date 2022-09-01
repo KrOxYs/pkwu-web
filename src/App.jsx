@@ -20,7 +20,7 @@ const App = (showRoutes) =>  {
         <Route path='buy-product' element={<Forms/>} />
           {/* <Route path='final-step' element={<FinalStep/>}/> */}
         {/* {route && <Route path='final-step' element={<FinalStep/>} />} */}
-        { route && <Route path='buy-product/final-step' element={<FinalStep/>} />}
+        <Route path='buy-product/final-step' element={<FinalStep/>} />
   
       </Routes>
       {/* </BrowserRouter> */}
